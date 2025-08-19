@@ -62,6 +62,13 @@ ol {
     font-weight: 800;
 }
 
+.bbva {
+    font-size: 16px;
+    color: ##49dbe6;
+    font-family: 'Montserrat';
+    font-weight: 800;
+}
+
 .trolleito {
     font-family: 'Montserrat';
     text-decoration: none;
@@ -78,3 +85,4 @@ ol {
     background-color: #ccc;
     color: #fff;
 }
+
