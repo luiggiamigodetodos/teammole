@@ -54,3 +54,20 @@ ol {
     font-family: 'Montserrat';
     font-weight: 800;
 }
+
+.trolleito {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #333;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 50px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.trolleito:hover {
+    background-color: #ccc;
+    color: #fff;
+}
