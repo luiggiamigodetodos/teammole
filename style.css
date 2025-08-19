@@ -52,6 +52,13 @@ ol {
     font-size: 16px;
     color: #333;
     font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+.cuenta_banco {
+    font-size: 16px;
+    color: #333:
+    font-family: 'Montserrat';
     font-weight: 800;
 }
 
@@ -71,3 +78,4 @@ ol {
     background-color: #ccc;
     color: #fff;
 }
+
