@@ -62,13 +62,6 @@ ol {
     font-weight: 800;
 }
 
-.bbva {
-    font-size: 16px;
-    color: ##49dbe6;
-    font-family: 'Montserrat';
-    font-weight: 800;
-}
-
 .trolleito {
     font-family: 'Montserrat';
     text-decoration: none;
@@ -86,3 +79,48 @@ ol {
     color: #fff;
 }
 
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.nombre_ingreso {
+    width: 200px;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #333;
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 50px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.boton_ingreso {
+    width: 208px;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #333;
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 50px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.boton_ingreso:hover {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.body_fake{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68vh;
+    margin: 0;
+}
