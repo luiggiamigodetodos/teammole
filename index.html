@@ -8,34 +8,41 @@
     <h1 class="titulo">TEAM MOLE</h1>
     <div class="body_fake">
         <form onsubmit="redirigir(event)" class="contenedor">
-        <input type="text" required class="nombre_ingreso" id="nombre" placeholder="Nombre">
-        <input type="submit" value="Ingresar" class="boton_ingreso">
-    </form>
+            <input type="text" required class="nombre_ingreso" id="nombre" placeholder="Nombre">
+            <input type="submit" value="Ingresar" class="boton_ingreso">
+        </form>
+    </div>
+
     <script>
     function redirigir(event) {
+        event.preventDefault();
 
-    event.preventDefault();
+        const nombre = document.getElementById("nombre").value.toLowerCase().trim();
+        console.log("Nombre Caputrado", nombre);
 
-    const nombre = document.getElementById("nombre").value.toLowerCase().trim();
+        const eastereggs = {
+            "nesqui" : "https://x.com/AAKAMEHH/status/1756111066080186803",
+            "peyov" : "https://www.google.com/search?q=la+persona+mas+negra+del+mundo&udm=2&sxsrf=AE3TifOhb7-a61PWNFyo0Z43ivx7A8PF3A%3A1755657223262",
+            "cagada" : "https://upload.wikimedia.org/wikipedia/commons/f/f4/PDU_cagada.png",
+            "gonza" : "https://x.com/ValidHazelTrans/status/1956722266537861385",
+            "dlol" : "https://es.wikipedia.org/wiki/Trastornos_del_espectro_autista",
+            "luiggi" : "https://maps.app.goo.gl/M2YECKizidEZ96Co7",
+            "luis" : "https://www.twitch.tv/nesquiplay1/clip/BeautifulEmpathicTardigradeDatSheffy-yHtAIfJH2wFoCrao?filter=clips&range=all&sort=time",
+        };
 
-    const eastereggs = {
-        "nesqui" : "https://x.com/AAKAMEHH/status/1756111066080186803",
-        "peyov" : "https://www.google.com/search?q=la+persona+mas+negra+del+mundo&udm=2&sxsrf=AE3TifOhb7-a61PWNFyo0Z43ivx7A8PF3A%3A1755657223262",
-        "cagada" : "https://upload.wikimedia.org/wikipedia/commons/f/f4/PDU_cagada.png",
-        "gonza" : "https://x.com/ValidHazelTrans/status/1956722266537861385",
-        "dlol" : "https://es.wikipedia.org/wiki/Trastornos_del_espectro_autista",
-        "luiggi" : "https://maps.app.goo.gl/M2YECKizidEZ96Co7",
-        "luis" : "https://www.twitch.tv/nesquiplay1/clip/BeautifulEmpathicTardigradeDatSheffy-yHtAIfJH2wFoCrao?filter=clips&range=all&sort=time",
-        
-    };
-            
-    if (eastereggs[nombre]) {
-        window.location.href = eastereggs[nombre];
-    } else {
-        window.location.href = "mole-page.html";
+        const notificaciones = {
+            "nesquiplay" : "Bienvenido alex261y",
+        };
+
+        if (eastereggs[nombre]) {
+            window.location.href = eastereggs[nombre];
+        } else if (notificaciones[nombre]) {
+            alert(notificaciones[nombre]);
+        } else {
+            window.location.href = "mole-page.html";
+        }
     }
-}
     </script>
-    </div>
 </body>
 </html>
+
