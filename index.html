@@ -7,11 +7,29 @@
 <body>
     <h1 class="titulo">TEAM MOLE</h1>
     <div class="body_fake">
-        <form action="mole-page.html" method="get" class="contenedor">
-        <input type="text" required class="nombre_ingreso" placeholder="Nombre">
+        <form onsubmit="redirigir(event)" class="contenedor">
+        <input type="text" required class="nombre_ingreso" id="nombre" placeholder="Nombre">
         <input type="submit" value="Ingresar" class="boton_ingreso">
-        
     </form>
+    <script>
+    function redirigir(event) {
+
+    event.preventDefault();
+
+    const nombre = document.getElementById("nombre").value.toLowerCase().trim();
+
+    const eastereggs = {
+        "nesqui" : ""
+
+    };
+            
+    if (eastereggs[nombre]) {
+        window.location.href = eastereggs[nombre];
+    } else {
+        window.location.href = "mole-page.html";
+    }
+}
+    </script>
     </div>
 </body>
 </html>
